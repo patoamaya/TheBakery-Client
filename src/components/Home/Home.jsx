@@ -97,7 +97,7 @@ const Home = ({handleSelect, index}) => {
           <p>Pedidos</p>
           <ul>
             <li>
-              Los pedidos se realizan por <Link to="https://wa.me/1130627969">Whatsapp</Link>
+              Los pedidos se realizan por <Link to="https://wa.me/+541130627969">Whatsapp</Link>
             </li>
             <li>
               Tortas clásicas o personalizadas con 5 / 7 dias de anticipación, por disponibilidad, podría ser menos.
@@ -184,7 +184,7 @@ const Home = ({handleSelect, index}) => {
           <ul className='home-logos'>
            <Link to="https://www.instagram.com/joaquinapasteleriaa/" target='blank'><li><img src={ig} alt="" className='home-logos-logo'/> <p>@joaquinapasteleriaa</p></li></Link>
             <Link to="https://www.facebook.com/joaquina.dulce.3" target='blank'><li><img src={fb} alt="" className='home-logos-logo'/><p>Joaquina Dulce</p></li></Link>
-            <Link to="https://wa.me/1130627969" target='blank'><li><img src={wpp} alt="" className='home-logos-logo'/> <p>+54 9 1130627969</p></li></Link>
+            <Link to="https://wa.me/+541130627969" target='blank'><li><img src={wpp} alt="" className='home-logos-logo'/> <p>+541130627969</p></li></Link>
           </ul>
         </div>
       </div>
