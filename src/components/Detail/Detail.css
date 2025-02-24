@@ -67,6 +67,12 @@
     font-weight: 700;
 }
 
+.no-price{
+    margin-left: 1rem;
+    /* font-weight: 600; */
+    font-size: 2rem;
+}
+
 @media only screen and (min-width:250px) and (max-width:768px) {
 
     .detail-container-all{

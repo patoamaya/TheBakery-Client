@@ -7,8 +7,7 @@ const Footer = () => {
       <Outlet/>
       <div className="footer-container-all">
         <div className="footer-contact">
-        <p>Creado por: Patricio Amaya</p>
-        <p>---link a mis redes---</p>
+        <p>Creado por Patricio Amaya</p>
         </div>
       </div>
       </div>

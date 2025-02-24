@@ -25,16 +25,16 @@ const Home = ({handleSelect, index}) => {
     <main className='home-container-all'>
       <div className="home-container">
             <div className="best-categories-carousel">
-              <p>Categorias destacadas </p>
+              <p className='best-categories-title'>Categorias destacadas </p>
                 <Carousel activeIndex={index} onSelect={handleSelect} interval={8000}>
                     <Carousel.Item >
-                        <Link to="/category/torta"><img src={foto3} alt="" className='carousel-img'/></Link>
+                        <Link to="/category/tortaClasica"><img src={foto3} alt="" className='carousel-img'/></Link>
                     </Carousel.Item>
                     <Carousel.Item >
-                        <Link to="/category/cumpleanos"><img src={foto8} alt="" className='carousel-img'/></Link>
+                        <Link to="/category/tortaPersonalizada"><img src={foto8} alt="" className='carousel-img'/></Link>
                     </Carousel.Item>
                     <Carousel.Item >
-                        <Link to="/category/budin"><img src={foto7} alt="" className='carousel-img'/></Link>
+                        <Link to="/category/variada"><img src={foto7} alt="" className='carousel-img'/></Link>
                     </Carousel.Item>
                     <Carousel.Item >
                         <Link to="/category/box"><img src={foto5} alt="" className='carousel-img'/></Link>
@@ -45,25 +45,25 @@ const Home = ({handleSelect, index}) => {
             <h4>Categorias destacadas</h4>
           <div className="home-categories-card-container">
             <div className="home-categories-card">
-              <Link to="/category/torta">
-            <img src={foto3} alt="" className='home-card-img'/>
+              <Link to="/category/tortaClasica">
+            <img src={foto3} alt="clasicas" className='home-card-img'/>
               </Link>
-            <p>Tortas</p>
+            <p>Tortas clasicas</p>
             </div>
 
 
           <div className="home-categories-card">
-            <Link to="/category/cumpleanos">
-            <img src={foto8} alt="cumpleaños" className='home-card-img' />
+            <Link to="/category/tortaPersonalizada">
+            <img src={foto8} alt="personalizadas" className='home-card-img' />
             </Link>
-            <p>Cumpleaños</p>
+            <p>Tortas personalizadas</p>
           </div>
 
           <div className="home-categories-card">
-            <Link to="/category/budin">
-            <img src={foto7} alt="budines" className='home-card-img'/>
+            <Link to="/category/variada">
+            <img src={foto7} alt="variadas" className='home-card-img'/>
             </Link>
-            <p>Budines</p>
+            <p>Pasteleria variada</p>
             </div>
           <div className="home-categories-card">
             <Link to="/category/box">
@@ -76,11 +76,42 @@ const Home = ({handleSelect, index}) => {
 
         <div id="howToBuy">
           <h3>Cómo realizar tu pedido</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat laborum dolorum veniam laboriosam quod unde officiis! In natus maiores iusto, saepe sit asperiores, alias, odio iste debitis quos delectus.
-          Nesciunt nostrum laudantium culpa! Nesciunt quas porro quam deserunt quia ut consequatur omnis! Est, debitis deleniti veniam, animi amet velit, modi blanditiis officiis repudiandae perspiciatis quisquam dignissimos dolorem vel totam!
-          Quia labore distinctio amet eveniet molestiae eaque! Voluptas praesentium pariatur, beatae rerum numquam quo sit consectetur qui nihil, temporibus, provident atque quae distinctio quaerat dicta veniam ratione aut illum cum.
-          Molestias nesciunt ipsum vel fugiat dolorum ex ipsam facilis autem asperiores quidem quia veritatis tenetur doloremque dolorem optio eum, sed voluptatum minima eligendi perspiciatis dignissimos quaerat repellendus. Aspernatur, natus error.
-          Minus perspiciatis animi quo error assumenda aperiam. Perferendis cumque asperiores consequuntur ex eum totam eos, laborum vero, autem cupiditate explicabo odio accusamus velit culpa iste omnis? Eius magnam sequi sit?</p>
+          <p>Presupuestos</p>
+          <ul>
+            <li>
+              Para solicitar un presupuesto, debido a que todo es personalizado, se precisa:
+            </li>
+            <li>
+              Establecer fecha para corroborar disponibilidad.
+            </li>
+            <li>
+              Enviar imagen de referencia o tener establecida una tematica en especial.
+            </li>
+            <li>
+              El presupuesto se dará una vez que contemos con los ítems anteriores.
+            </li>
+            <li>
+              El valor de éste tendra validez por 7 dias, ya que el precio de la materia prima podría incrementar. 
+            </li>
+          </ul>
+          <p>Pedidos</p>
+          <ul>
+            <li>
+              Los pedidos se realizan por <Link to="https://wa.me/1130627969">Whatsapp</Link>
+            </li>
+            <li>
+              Tortas clásicas o personalizadas con 5 / 7 dias de anticipación, por disponibilidad, podría ser menos.
+            </li>
+            <li>
+              Tartas con 24 / 48 hs. de anticipación.
+            </li>
+            <li>
+              Se realizan envíos y su costo varía según la zona.
+            </li>
+            <li>
+              Se puede retirar personalmente por Rafael Calzada o Temperley, GBA Sur.
+            </li>
+          </ul>
         </div>
 
     

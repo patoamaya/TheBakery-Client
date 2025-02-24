@@ -12,8 +12,8 @@ const UseCarousel = ({imagenes}) => {
   return (
         <Carousel activeIndex={index} onSelect={handleSelect} interval={3000}>
             {
-                imagenes && imagenes.map((imagen)=>(
-                    <Carousel.Item >
+                imagenes && imagenes.map((imagen, index)=>(
+                    <Carousel.Item key={index}>
                         <img src={imagen.url} alt="" className='detail-img' key={imagen.public_id}/>
                     </Carousel.Item>
                 ))

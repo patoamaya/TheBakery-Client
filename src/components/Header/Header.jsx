@@ -19,19 +19,14 @@ const Header = ({ handleSelectChange, location}) => {
                 onChange={handleSelectChange} value={location.pathname === "/" && ""}>
                 <option value="">Categorias</option>
                 <option value="all">Todo</option>
-                <option value="torta">Tortas</option>
-                <option value="budin">Budines</option>
-                <option value="box">Box de tortas</option>
+                <option value="tortaClasica">Tortas clasicas</option>
+                <option value="tortaPersonalizada">Tortas personalizadas</option>
+                <option value="variada">Pasteleria variada</option>
+                <option value="box">Box</option>
                 <option value="miniPasteleria">Mini pasteleria</option>
-                <option value="navidad">Navidad</option>
-                <option value="sanValentin">San Valentin</option>
-                <option value="pascua">Pascua</option>
-                <option value="diaPadre">Dia del padre</option>
-                <option value="diaMadre">Dia de la madre</option>
-                <option value="fechasPatrias">Fechas patrias</option>
-                <option value="cumpleanos">Cumpleaños</option>
-                <option value="catering">Catering</option>
-                <option value="salado">Salados</option>
+                <option value="fechaEspecial">Fechas especiales</option>
+                <option value="cateringSalado">Catering salado</option>
+                <option value="cateringDulce">Catering dulce</option>
               </select>
             </li>
             <li><a href="/#howToBuy"><p>Cómo comprar</p></a></li>
@@ -45,19 +40,14 @@ const Header = ({ handleSelectChange, location}) => {
                 onChange={handleSelectChange} value={location.pathname === "/" && ""}>
                 <option value="">Categorias</option>
                 <option value="all">Todo</option>
-                <option value="torta">Tortas</option>
-                <option value="budin">Budines</option>
-                <option value="box">Box de tortas</option>
+                <option value="tortaClasica">Tortas clasicas</option>
+                <option value="tortaPersonalizada">Tortas personalizadas</option>
+                <option value="variada">Pasteleria variada</option>
+                <option value="box">Box</option>
                 <option value="miniPasteleria">Mini pasteleria</option>
-                <option value="navidad">Navidad</option>
-                <option value="sanValentin">San Valentin</option>
-                <option value="pascua">Pascua</option>
-                <option value="diaPadre">Dia del padre</option>
-                <option value="diaMadre">Dia de la madre</option>
-                <option value="fechasPatrias">Fechas patrias</option>
-                <option value="cumpleanos">Cumpleaños</option>
-                <option value="catering">Catering</option>
-                <option value="salado">Salados</option>
+                <option value="fechaEspecial">Fechas especiales</option>
+                <option value="cateringSalado">Catering salado</option>
+                <option value="cateringDulce">Catering dulce</option>
               </select>
           <Link to="/">
           <img src={logo} className='mobile-logo'/>

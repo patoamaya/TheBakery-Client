@@ -34,16 +34,15 @@ const Detail = ({data, loading}) => {
                 </div>
                 <div className="detail-info-container">
                 <p className="detail-info-title">{nombre}</p>
-                  {rinde && <p className='detail-info'><b>Rinde:</b> {rinde} porciones</p>}
+                  {rinde && rinde != 0 ? <p className='detail-info'><b>Rinde:</b> {rinde} porciones</p> : ""}
                   {tamano && <p className='detail-info'><b>Tamaño:</b> {tamano} cm.</p>}
                   {descripcion && <p className='detail-info'><b>Descripcion:</b> {descripcion}</p>}
                   {
                     precio ?
                     <p className="detail-info-price">$ {precio?.toLocaleString()}</p>
                     :
-                    ""
+                    <p className='no-price'>Consultar precio</p>
                   }
-                  
                   </div>
                 
         </div>

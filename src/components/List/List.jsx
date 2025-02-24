@@ -30,9 +30,9 @@ const List = ({filteredData, pageData}) => {
         loading === false && filteredData !=0
         ?
         filteredData.map((data)=>{
-          let {nombre, tamano, imagenes, precio, _id, categoria} = data
+          let {nombre, tamano, imagenes, precio, _id} = data
           return(
-            <Link to={`/detail/${_id}`}>
+            <Link to={`/detail/${_id}`} key={_id}>
             <div className="list-card-container" key={_id}>
               <div className="list-card-img-container">
               <img src={imagenes[0].url} alt="" className='list-card-img' />
@@ -63,13 +63,13 @@ const List = ({filteredData, pageData}) => {
           </p>
         }
       </div>
-      <div className={loading || filteredData.length === 0  || filteredData.length < 6 ? "disabled" : "list-page-container"}>
+      <div className={loading || filteredData.length === 0  ? "disabled" : "list-page-container"}>
         <Button variant="contained" color="secondary" onClick={()=>{handlePageChange(currentPage - 1)}}disabled={currentPage === 1}>
         anterior
         </Button>
 
             <h3>{currentPage} / {totalPages}</h3>
-        <Button variant="contained" color="secondary" onClick={()=>{handlePageChange(currentPage + 1)}}  disabled={currentPage === totalPages}>
+        <Button variant="contained" color="secondary" onClick={()=>{handlePageChange(currentPage + 1)}}  disabled={currentPage === totalPages || filteredData.length < 6}>
         siguiente
         </Button>
     </div>
