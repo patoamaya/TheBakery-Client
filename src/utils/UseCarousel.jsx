@@ -10,7 +10,7 @@ const UseCarousel = ({imagenes}) => {
       setIndex(selectedIndex);
     };
   return (
-        <Carousel activeIndex={index} onSelect={handleSelect} interval={3000}>
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={10000}>
             {
                 imagenes && imagenes.map((imagen, index)=>(
                     <Carousel.Item key={index}>

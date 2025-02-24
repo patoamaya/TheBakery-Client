@@ -26,7 +26,7 @@ const Home = ({handleSelect, index}) => {
       <div className="home-container">
             <div className="best-categories-carousel">
               <p className='best-categories-title'>Categorias destacadas </p>
-                <Carousel activeIndex={index} onSelect={handleSelect} interval={8000}>
+                <Carousel activeIndex={index} onSelect={handleSelect} interval={10000}>
                     <Carousel.Item >
                         <Link to="/category/tortaClasica"><img src={foto3} alt="" className='carousel-img'/></Link>
                     </Carousel.Item>
@@ -182,7 +182,7 @@ const Home = ({handleSelect, index}) => {
           </p>
 
           <ul className='home-logos'>
-           <Link to="https://www.instagram.com/joaquina.dulce/" target='blank'><li><img src={ig} alt="" className='home-logos-logo'/> <p>@joaquina.dulce</p></li></Link>
+           <Link to="https://www.instagram.com/joaquinapasteleriaa/" target='blank'><li><img src={ig} alt="" className='home-logos-logo'/> <p>@joaquinapasteleriaa</p></li></Link>
             <Link to="https://www.facebook.com/joaquina.dulce.3" target='blank'><li><img src={fb} alt="" className='home-logos-logo'/><p>Joaquina Dulce</p></li></Link>
             <Link to="https://wa.me/1130627969" target='blank'><li><img src={wpp} alt="" className='home-logos-logo'/> <p>+54 9 1130627969</p></li></Link>
           </ul>
