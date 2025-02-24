@@ -1,7 +1,7 @@
 import React from 'react'
 import './Detail.css'
-import UseCarousel from '../../utils/useCarousel'
 import {Hearts} from 'react-loader-spinner'
+import UseCarousel from '../../utils/UseCarousel'
 
 
 
