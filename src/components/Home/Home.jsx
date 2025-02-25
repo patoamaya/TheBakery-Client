@@ -48,7 +48,6 @@ const Home = ({handleSelect, index}) => {
               <Link to="/category/tortaClasica">
             <img src={foto3} alt="clasicas" className='home-card-img'/>
               </Link>
-            <p>Tortas clasicas</p>
             </div>
 
 
@@ -56,20 +55,17 @@ const Home = ({handleSelect, index}) => {
             <Link to="/category/tortaPersonalizada">
             <img src={foto8} alt="personalizadas" className='home-card-img' />
             </Link>
-            <p>Tortas personalizadas</p>
           </div>
 
           <div className="home-categories-card">
             <Link to="/category/variada">
             <img src={foto7} alt="variadas" className='home-card-img'/>
             </Link>
-            <p>Pasteleria variada</p>
             </div>
           <div className="home-categories-card">
             <Link to="/category/box">
             <img src={foto5} alt="box" className='home-card-img'/>
             </Link>
-            <p>Box</p>
           </div>
         </div>
       </div>
