@@ -32,16 +32,16 @@ const Home = ({handleSelect, index}) => {
               <p className='best-categories-title'>Categorias destacadas </p>
                 <Carousel activeIndex={index} onSelect={handleSelect} interval={10000}>
                     <Carousel.Item >
-                        <Link to="/category/tortaClasica"><img src={foto3} alt="" className='carousel-img'/></Link>
+                        <Link to="/category/tortaClasica"><img src={foto3cat} alt="" className='carousel-img'/></Link>
                     </Carousel.Item>
                     <Carousel.Item >
-                        <Link to="/category/tortaPersonalizada"><img src={foto8} alt="" className='carousel-img'/></Link>
+                        <Link to="/category/tortaPersonalizada"><img src={foto8cat} alt="" className='carousel-img'/></Link>
                     </Carousel.Item>
                     <Carousel.Item >
-                        <Link to="/category/variada"><img src={foto7} alt="" className='carousel-img'/></Link>
+                        <Link to="/category/variada"><img src={foto7cat} alt="" className='carousel-img'/></Link>
                     </Carousel.Item>
                     <Carousel.Item >
-                        <Link to="/category/box"><img src={foto5} alt="" className='carousel-img'/></Link>
+                        <Link to="/category/box"><img src={foto5cat} alt="" className='carousel-img'/></Link>
                     </Carousel.Item>
                 </Carousel>
             </div>
