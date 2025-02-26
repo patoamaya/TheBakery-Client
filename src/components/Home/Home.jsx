@@ -8,7 +8,7 @@ import foto5cat from '../../assets/Home-assets/foto5cat.jpg'
 import foto5 from '../../assets/Home-assets/foto5.jpeg'
 import foto6 from '../../assets/Home-assets/foto6.jpg'
 import foto7cat from '../../assets/Home-assets/foto7cat.jpg'
-import foto7 from '../../assets/Home-assets/foto7.jpeg'
+import foto7 from '../../assets/Home-assets/foto7.jpg'
 import foto8cat from '../../assets/Home-assets/foto8cat.jpg'
 import foto8 from '../../assets/Home-assets/foto8.jpg'
 import foto9 from '../../assets/Home-assets/foto9.jpg'
@@ -50,26 +50,30 @@ const Home = ({handleSelect, index}) => {
           <div className="home-categories-card-container">
             <div className="home-categories-card">
               <Link to="/category/tortaClasica">
-            <img src={foto3cat} alt="clasicas" className='home-card-img'/>
+            <img src={foto3} alt="clasicas" className='home-card-img'/>
               </Link>
+            <p>Tortas clásicas</p>
             </div>
 
 
           <div className="home-categories-card">
             <Link to="/category/tortaPersonalizada">
-            <img src={foto8cat} alt="personalizadas" className='home-card-img' />
+            <img src={foto8} alt="personalizadas" className='home-card-img' />
             </Link>
+            <p>Tortas personalizadas</p>
           </div>
 
           <div className="home-categories-card">
             <Link to="/category/variada">
-            <img src={foto7cat} alt="variadas" className='home-card-img'/>
+            <img src={foto7} alt="variadas" className='home-card-img'/>
             </Link>
+            <p>Pasteleria variada</p>
             </div>
           <div className="home-categories-card">
             <Link to="/category/box">
-            <img src={foto5cat} alt="box" className='home-card-img'/>
+            <img src={foto5} alt="box" className='home-card-img'/>
             </Link>
+            <p>Box</p>
           </div>
         </div>
       </div>
